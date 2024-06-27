@@ -1,0 +1,244 @@
+/* People Power */
+.people-power {
+  background-color: var(--color-base-background-1);
+}
+
+.people-power .people-power__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.people-power .people-power__grid-info {
+  width: 590px;
+}
+
+.people-power .people-power__grid h3 {
+  padding: 76px 0 46px 0;
+}
+
+.people-power__initial-info {
+  margin-bottom: 54px;
+}
+
+.people-power .people-power__info .people-power__initial-info p:last-child {
+  padding: 30px 0 52px 0;
+  border-bottom: 1px solid var(--color-secondary);
+}
+
+.people-power .people-power__more-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 23px;
+}
+
+.people-power
+  .people-power__more-info-grid
+  .people-power__col-1
+  div:nth-child(2) {
+  padding-top: 20px;
+}
+
+.people-power .people-power__col-2 .people-power__box-container {
+  margin-top: 39px;
+  margin-bottom: 42px;
+  list-style-type: none;
+}
+
+.people-power .people-power__box-container li {
+  border: 1px solid var(--color-secondary);
+  border-radius: 4px;
+  padding: 10px 0px 10px 16px;
+}
+
+.people-power .people-power__col-2 .people-power__box-container li:first-child {
+  margin-bottom: 9px;
+}
+
+.people-power .people-power__more-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.people-power .people-power__img-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.people-power .people-power__img-container img:nth-child(1) {
+}
+
+.people-power .people-power__img-container img:nth-child(2) {
+  margin-right: 30px;
+  margin-bottom: 8px;
+}
+
+.people-power .people-power__executive-board {
+  margin-top: 71px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.people-power .people-power__executive-board__box {
+  background-color: var(--color-base-color);
+  padding: 46px 63px 40px 63px;
+  text-align: center;
+}
+
+.people-power .people-power__executive-board strong {
+  display: block;
+}
+
+.people-power .people-power__executive-board span {
+  font-size: var(--font-size-small);
+}
+
+.people-power ul {
+  padding-left: 0px;
+}
+
+.people-power .people-power__executive-board ul li {
+  padding-top: 14px;
+  list-style-type: none;
+}
+
+.people-power .people-power__ceo {
+  margin-top: 34px;
+  display: flex;
+  gap: 68px;
+  text-align: center;
+}
+
+.people-power .people-power__ceo-img {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.people-power .people-power__ceo-img img:nth-child(2) {
+  margin-left: -10px;
+}
+
+/* Media Query */
+@media (max-width: 1200px) {
+  .people-power {
+    padding: 0 20px 0;
+  }
+
+  .people-power .people-power__img-container {
+    margin: 20px 0;
+  }
+
+  .people-power .people-power__img-container img:first-child {
+    width: 120px;
+  }
+
+  .people-power .people-power__img-container img:nth-child(2) {
+    width: 150px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .people-power .people-power__grid .people-power__col-1 p {
+    padding-right: 20px;
+  }
+
+  .people-power .people-power__grid h3 {
+    padding-bottom: 36px;
+  }
+
+  .people-power .people-power__box-container li {
+    padding: 6px 0 6px 0;
+    text-align: center;
+  }
+
+  .people-power .people-power__col-2 .people-power__box-container {
+    margin-right: 8px;
+  }
+
+  .people-power .people-power__img-container img:first-child {
+    width: 100px;
+  }
+
+  .people-power .people-power__info .people-power__initial-info p:last-child {
+    padding-bottom: 30px;
+  }
+
+  .people-power__initial-info {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .people-power .people-power__grid h3 {
+    padding: 42px 0 24px 0;
+  }
+
+  .people-power__initial-info {
+    margin-bottom: 26px;
+  }
+
+  .people-power .people-power__grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .people-power .people-power__info .people-power__initial-info p:last-child {
+    padding: 24px 0 28px 0;
+  }
+  .people-power .people-power__more-info-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .people-power .people-power__grid .people-power__col-1 p {
+    padding-right: 0;
+  }
+
+  .people-power .people-power__grid .people-power__col-2 p {
+    padding-right: 0;
+  }
+
+  .people-power .people-power__grid .people-power__col-2 {
+    padding-top: 20px;
+  }
+
+  .people-power .people-power__img-container {
+    justify-content: space-evenly;
+  }
+
+  .people-power .people-power__col-2 .people-power__box-container {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  .people-power .people-power__executive-board {
+    margin-top: 42px;
+  }
+
+  .people-power .people-power__executive-board__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .people-power .people-power__ceo {
+    margin-top: 48px;
+  }
+
+  .people-power .people-power__ceo-img {
+    margin-top: 26px;
+  }
+
+  .people-power .people-power__img-container {
+    margin: 0;
+  }
+
+  .people-power .people-power__img-container img:nth-child(2) {
+    margin: 0;
+  }
+}

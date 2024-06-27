@@ -1,0 +1,144 @@
+.sustainability {
+  position: relative;
+}
+
+.sustainability .sustainability-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+.sustainability .sustainability__img {
+  background-color: #fff;
+}
+
+.sustainability .page-width {
+  display: flex;
+  justify-content: right;
+}
+
+.sustainability .sustainability__info {
+  padding-top: 76px;
+  padding-bottom: 40px;
+}
+
+.sustainability .sustainability__info h3 {
+  margin-bottom: 38px;
+}
+
+.sustainability .sustainability__info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.sustainability .sustainability__info .sustainability__col-1 div {
+  margin-bottom: 24px;
+}
+
+.sustainability .sustainability__info .sustainability__col-1 div:nth-child(3) {
+  margin-bottom: 30px;
+}
+
+.sustainability .sustainability__info .sustainability__col-1 div:last-child {
+  margin-bottom: 0;
+}
+
+.sustainability .sustainability__info .sustainability__col-2 img {
+  margin: 22px 0 18px 0;
+}
+
+/* Media Query */
+@media (max-width: 1200px) {
+  .sustainability .sustainability__info {
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .sustainability .sustainability-wrapper {
+    gap: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .sustainability .sustainability-wrapper {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .sustainability .sustainability__img {
+    order: 2;
+  }
+
+  .sustainability .sustainability__info h3 {
+    margin-bottom: 22px;
+  }
+
+  .bg-img-holder-left img {
+    position: static;
+    width: 100%;
+  }
+
+  .sustainability .sustainability__info {
+    width: 100%;
+  }
+
+  .sustainability {
+    display: grid;
+  }
+
+  .sustainability__picture {
+    display: flex;
+  }
+
+  .sustainability .page-width {
+    order: 1;
+  }
+
+  .sustainability .sustainability__image {
+    width: 100%;
+    position: static;
+    order: 2;
+  }
+
+  .sustainability .sustainability__info-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .sustainability .sustainability__info {
+    padding: 48px 20px 24px 20px;
+  }
+
+  .sustainability .sustainability__info .sustainability__col-1 div {
+    margin-bottom: 15px;
+  }
+
+  .sustainability
+    .sustainability__info
+    .sustainability__col-1
+    div:nth-child(3) {
+    margin-bottom: 22px;
+  }
+
+  .sustainability .sustainability__info .sustainability__col-2 {
+    margin-top: 26px;
+  }
+}
+
+@media (min-width: 992px) {
+  .sustainability:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+    width: calc(50% - 63px);
+    height: 100%;
+    background: #c5d24f;
+  }
+}

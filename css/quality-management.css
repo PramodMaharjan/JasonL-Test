@@ -1,0 +1,142 @@
+/* Quality Management */
+.quality-management {
+  background-color: var(--color-base-background-1);
+  padding-bottom: 50px;
+}
+
+.quality-management .quality-management__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.quality-management .quality-management__grid h3 {
+  padding: 76px 0 36px 0;
+}
+
+.quality-management__initial-info {
+  margin-bottom: 35px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--color-secondary);
+}
+
+.quality-management .quality-management__initial-info p {
+  max-width: 470px;
+}
+
+.quality-management .quality-management__info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 25px 23px;
+}
+
+.quality-management .quality-management__info-grid img {
+  width: 53px;
+  height: 53px;
+  margin-bottom: 2px;
+}
+
+.quality-management .quality-management__we-care {
+  margin-top: 68px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding-right: 35px;
+}
+
+.quality-management .quality-management__we-care__box {
+  background-color: var(--color-base-background-2);
+  width: 484px;
+  padding: 46px 56px 38px 56px;
+  text-align: center;
+}
+
+.quality-management .quality-management__box-info {
+  margin-top: 24px;
+}
+
+.quality-management .quality-management__we-care__box p {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.quality-management .quality-management__box-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.quality-management .quality-management__we-care__box img {
+  width: 129px;
+}
+
+.quality-management .quality-management__info-grid div:first-child p,
+.quality-management .quality-management__info-grid div:nth-child(3) p {
+  padding-right: 24px;
+}
+
+/* Media Query */
+@media (max-width: 1200px) {
+  .quality-management {
+    padding: 0 20px 43px 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .quality-management .quality-management__grid h3 {
+    padding: 50px 0 20px 0;
+  }
+
+  .quality-management__initial-info {
+    padding-bottom: 34px;
+    margin-bottom: 32px;
+  }
+
+  .quality-management .quality-management__info-grid {
+    grid-gap: 22px 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .quality-management .quality-management__we-care__box {
+    width: 380px;
+  }
+
+  .quality-management .quality-management__info-grid img {
+    margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 767px) {
+  .quality-management .quality-management__grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .quality-management .quality-management__initial-info p {
+    max-width: none;
+  }
+
+  .quality-management .quality-management__info-grid img {
+    width: 56px;
+    height: 56px;
+  }
+
+  .quality-management .quality-management__we-care {
+    margin-top: 32px;
+  }
+
+  .quality-management .quality-management__we-care__box {
+    padding: 28px 18px 24px 18px;
+    width: 100%;
+  }
+
+  .quality-management .quality-management__info-grid div:first-child p,
+  .quality-management .quality-management__info-grid div:nth-child(3) p {
+    padding-right: 0;
+  }
+
+  .quality-management .quality-management__box-info {
+    margin-top: 18px;
+  }
+}
