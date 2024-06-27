@@ -59,11 +59,20 @@
 /* Media Query */
 @media (max-width: 1200px) {
   .slavery .slavery__info {
-    padding: 50px 20px 52px 20px;
+    padding-right: 20px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .slavery .slavery__info {
+    padding-top: 62px;
+    padding-bottom: 62px;
+  }
+
+  .slavery .slavery__info h3 {
+    margin-bottom: 26px;
+  }
+
   .slavery .slavery-wrapper {
     gap: 0px;
   }
@@ -80,6 +89,10 @@
 }
 
 @media (max-width: 767px) {
+  .slavery .slavery__info {
+    padding: 50px 20px 52px 20px;
+  }
+
   .slavery .slavery-wrapper {
     grid-template-columns: 1fr;
     gap: 0;

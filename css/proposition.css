@@ -25,7 +25,12 @@
 .proposition .proposition__info-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px 50px;
+  grid-gap: 18px 22px;
+}
+
+.proposition__info-grid div:nth-child(1),
+.proposition__info-grid div:nth-child(3) {
+  padding-right: 23px;
 }
 
 /* Media Query */
@@ -40,7 +45,7 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
   .proposition {
-    padding: 20px 20px;
+    padding: 62px 20px;
   }
 
   .proposition .proposition__info h3 {
@@ -110,5 +115,10 @@
 
   .proposition .proposition__grid .proposition__image img {
     width: 100%;
+  }
+
+  .proposition__info-grid div:nth-child(1),
+  .proposition__info-grid div:nth-child(3) {
+    padding-right: 0;
   }
 }

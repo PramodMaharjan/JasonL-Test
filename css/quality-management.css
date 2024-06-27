@@ -27,7 +27,7 @@
 .quality-management .quality-management__info-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 25px 23px;
+  grid-gap: 25px 22px;
 }
 
 .quality-management .quality-management__info-grid img {
@@ -78,15 +78,11 @@
 /* Media Query */
 @media (max-width: 1200px) {
   .quality-management {
-    padding: 0 20px 43px 20px;
+    padding: 0 20px 62px 20px;
   }
 }
 
 @media (max-width: 1024px) {
-  .quality-management .quality-management__grid h3 {
-    padding: 50px 0 20px 0;
-  }
-
   .quality-management__initial-info {
     padding-bottom: 34px;
     margin-bottom: 32px;
@@ -107,7 +103,24 @@
   }
 }
 
+@media (min-width: 992px) and (max-width: 1024px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .quality-management .quality-management__grid h3 {
+    padding: 62px 0 26px 0;
+  }
+}
+
 @media (max-width: 767px) {
+  .quality-management {
+    padding: 0 20px 52px 20px;
+  }
+  
+  .quality-management .quality-management__grid h3 {
+    padding: 50px 0 20px 0;
+  }
+
   .quality-management .quality-management__grid {
     grid-template-columns: 1fr;
     gap: 0;
@@ -138,5 +151,9 @@
 
   .quality-management .quality-management__box-info {
     margin-top: 18px;
+  }
+
+  .quality-management .quality-management__we-care{
+    padding-right: 0;
   }
 }

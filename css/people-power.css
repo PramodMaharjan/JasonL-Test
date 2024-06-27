@@ -29,7 +29,7 @@
 .people-power .people-power__more-info-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 23px;
+  gap: 22px;
 }
 
 .people-power
@@ -128,7 +128,7 @@
   }
 
   .people-power .people-power__img-container {
-    margin: 20px 0;
+    margin: 20px 0 62px 0;
   }
 
   .people-power .people-power__img-container img:first-child {
@@ -145,21 +145,23 @@
     padding-right: 20px;
   }
 
-  .people-power .people-power__grid h3 {
-    padding-bottom: 36px;
-  }
-
   .people-power .people-power__box-container li {
     padding: 6px 0 6px 0;
     text-align: center;
   }
 
-  .people-power .people-power__col-2 .people-power__box-container {
-    margin-right: 8px;
-  }
-
   .people-power .people-power__img-container img:first-child {
     width: 100px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .people-power .people-power__grid h3 {
+    padding-top: 62px;
+    padding-bottom: 26px;
   }
 
   .people-power .people-power__info .people-power__initial-info p:last-child {

@@ -28,7 +28,7 @@
 .community .community__info-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 44px;
+  gap: 22px;
 }
 
 .community .community__supply {
@@ -81,7 +81,7 @@
 /* Media Query */
 @media (max-width: 1200px) {
   .community {
-    padding: 0 20px 44px 20px;
+    padding: 0 20px 62px 20px;
   }
 }
 
@@ -100,8 +100,17 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  .community .community__we-care__box {
+    width: 380px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
   .community .community__grid h3 {
-    padding: 40px 0 20px 0;
+    padding: 62px 0 26px 0;
   }
 
   .community .community__initial-info {
@@ -117,16 +126,8 @@
     margin-top: 20px;
   }
 
-  .community .community__we-care__box {
-    width: 380px;
-  }
-
-  .quality-management .quality-management__info-grid img {
-    margin-bottom: 8px;
-  }
-
   .community .community__info {
-    padding: 0 20px 20px 0;
+    padding-right: 20px;
   }
 }
 
@@ -169,6 +170,7 @@
 
   .community .community__we-care {
     margin-top: 32px;
+    padding-right: 0;
   }
 
   .community .community__we-care__box {
@@ -177,5 +179,9 @@
 
   .community .community__we-care__box {
     padding: 30px 18px 42px 18px;
+  }
+
+  .community {
+    padding-bottom: 47px;
   }
 }
